@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaMercado.View.ListarProdutos">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                
+                <SearchBar x:Name="procurar_txt"
+                           Placeholder="Digite seu Produto..."
+                           TextChanged="procurar_txt_TextChanged"/>
+                <RefreshView x:Name="ref_carregando" IsRefreshing="true">
+                    
+                </RefreshView>
+
+
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
