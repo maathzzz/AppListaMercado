@@ -24,9 +24,10 @@ namespace AppListaMercado.View
         {
             InitializeComponent();
 
-            lst_produtos.ItemsSource = lista_produtos;
+            // lst_produtos.ItemsSource = lista_produtos;
         }
 
+        
         private void procurar_txt_TextChanged(object sender, TextChangedEventArgs e)
         {
             string buscou = e.NewTextValue;
@@ -39,24 +40,35 @@ namespace AppListaMercado.View
                 /**
                  * Limpando a ObservableCollection antes de add os itens vindos da busca.
                  */
-                ListarProdutos.Clear();
+
+                // ListarProdutos.Clear();
 
                 foreach (Produto item in temp)
                 {
-                    ListarProdutos.Add(item);
+                    // ListarProdutos.Add(item);
                 }
 
-                ref_carregando.IsRefreshing = false;
+                // ref_carregando.IsRefreshing = false;
             });
 
-        }
+        } 
 
-        private void lista_produtos_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void lst_produtos_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
 
         }
 
         private void MenuItem_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Somar_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Novo_Clicked(object sender, EventArgs e)
         {
 
         }
